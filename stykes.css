@@ -1,0 +1,256 @@
+html {
+   font-size: 26px;  
+}
+
+/***   Body Styles   ***/
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden; 
+  font-family: "Times New Roman", Times, serif;
+}
+
+/***   Top Navigation Bar  ***/
+
+.nav {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: #9932CC;
+  overflow-x: hidden;
+  overflow-y: hidden;
+ }
+
+#navbar {
+  float: right;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  overflow: hidden;
+}
+
+#navbar ul li {
+  padding: 2px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 120px; 
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#navbar a:link {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar a:visited {
+  color: white;  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar a:active {
+  color: gray;
+  text-decoration: none;
+}
+
+/***   Welcome Section Styles  ***/
+
+#welcome-section {
+ background: linear-gradient(#9932CC, #6699CC);  
+ width: 100%;
+ height: 100vh;
+ margin: 0;
+ padding: 0;
+}
+
+h1 {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 1.14rem;
+    margin-top: 20px;
+}
+
+/***    Project Section   ***/
+
+ /***    Horizontal lines styles    ***/
+
+#hr1 {
+  width: 100%;
+  height: 10px;
+  border: 5px dashed #6699CC;
+  margin-top: 40px;
+}
+
+#hr2 {
+  width: 100%;
+  height: 10px;
+  border: 5px dashed #6699CC;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #9932CC;
+}
+
+/***     Grid formatting for Projects    ***/
+
+.grid-container {
+  display: grid;
+  margin: auto;
+  width: 80%;
+  max-width: 1000px;
+  height: auto;
+  grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+  grid-row-gap: 100px;
+  grid-column-gap: 200px;
+}
+
+figure {
+  width: 90%;
+  margin: auto;
+  height: auto;
+  border: 10px solid #6699CC;
+  border-radius: 15px;
+}
+
+figcaption {
+  width 100%;
+  max-with: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.project-tile {
+  width: 90%;
+  height: auto;    
+}      
+
+img {
+   width: 100%;
+   max-width: 100%;
+   height: auto;
+   padding-bottom: 10px;    
+}
+
+p {
+   margin-bottom:  140px;
+}
+
+* {
+    box-sixing: border-box;
+}
+
+/**    Contact Section   ***/
+
+#contact {
+background: linear-gradient(#6699CC,#9932CC);  
+ width: 100%;
+ height: 600px;
+ margin: 0;
+ padding: 0;
+}
+
+#contact p {
+  color: white;
+  padding-top: 20px;
+  margin-bottom: 200px;
+  text-align: center;
+  font-size: 1rem;
+}
+ 
+ nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  margin-top: 100px;
+}
+
+ nav > a {
+  flex: 1;
+  text-align: center;
+  margin: 0.28em;
+  padding: 0.25em;
+  background-color: #9932CC;
+  border: 1px solid #9932CC;
+  text-decoration: none
+  color: #555;
+}
+
+/***     Media Query for Top Navigation    ^^*/
+
+@media only screen and (min-width: 768px) {
+  
+#contact nav { 
+  display: flex;
+  flex-direction: row; 
+  }
+}
+
+#contact a:link {
+  color: white;
+  text-decoration: none;
+}
+
+#contact a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#contact a:active {
+  color: gray;
+  text-decoration: none;
+}    
+
+footer {
+  margin-top: 200px;
+  padding: 0.1em;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px){
+  
+  body {
+    display: flex;
+    flex-direction: column;    
+  }
+   
+#navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #9932CC;
+    border: 3px solid ##6699CC;
+}    
+  
+}
